@@ -6,7 +6,9 @@ const SERVICES = [
   { id: '01', title: 'AI ADS', subtitle: 'AI 광고제작', desc: 'AI 기술로 완성하는 고품질 광고 콘텐츠', color: 'bg-[#0a7d5a]', link: '/vision/ai-ads' },
   { id: '02', title: 'AI MODEL', subtitle: 'AI 모델', desc: '브랜드 맞춤형 가상 페르소나 기획 및 운영', color: 'bg-[#2563eb]', link: '/vision/ai-model' },
   { id: '03', title: 'WEB AGENCY', subtitle: '웹에이전시', desc: '비즈니스 맞춤형 웹사이트 구축 및 운영', color: 'bg-[#7c3aed]', link: '/vision/web-agency' },
-  { id: '04', title: 'MATCHMAKING', subtitle: '결정사', desc: 'AI 알고리즘 기반 프리미엄 매칭 서비스', color: 'bg-[#1e3a5f]', link: '/vision/matchmaking' }
+  { id: '04', title: 'MATCHMAKING', subtitle: '결정사', desc: 'AI 알고리즘 기반 프리미엄 매칭 서비스', color: 'bg-[#1e3a5f]', link: '/vision/matchmaking' },
+  { id: '05', title: 'MARKETING', subtitle: '온라인마케팅', desc: '바이럴·SNS·키워드 종합 마케팅 대행', color: 'bg-[#d97706]', link: '/vision/marketing' },
+  { id: '06', title: 'AI EDUCATION', subtitle: 'AI 교육', desc: 'AI 이미지·영상·업무자동화·전환 교육', color: 'bg-[#dc2626]', link: '/vision/ai-education' }
 ];
 
 export default function VisionHome() {
@@ -46,7 +48,7 @@ export default function VisionHome() {
             </FadeIn>
             <div className="flex flex-wrap justify-center gap-8 md:gap-16">
               {[
-                { num: '4', label: '운영사업' },
+                { num: '6', label: '운영사업' },
                 { num: '40+', label: '파트너사' },
                 { num: '60만+', label: '누적 프로젝트' }
               ].map((stat, idx) => (

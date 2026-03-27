@@ -32,17 +32,17 @@ export default function About() {
     <div className="min-h-screen bg-white pt-20 md:pt-24">
 
       {/* HERO */}
-      <section className="w-full py-16 md:py-24 flex flex-col items-center justify-center text-center px-6 relative">
+      <section className="w-full py-10 md:py-16 flex flex-col items-center justify-center text-center px-6 relative">
         <FadeIn>
-          <h1 className="font-oswald text-[50px] md:text-[60px] font-extrabold text-[#222] uppercase tracking-tight leading-none mb-4">
+          <h1 className="font-oswald text-[42px] md:text-[48px] font-extrabold text-[#222] uppercase tracking-tight leading-none mb-3">
             ABOUT US
           </h1>
-          <p className="text-gray-500 text-lg md:text-[20px]">
+          <p className="text-gray-500 text-lg md:text-[18px]">
             AI 기술로 새로운 가치를 만드는 팀
           </p>
         </FadeIn>
 
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-px bg-gradient-to-r from-transparent via-gray-300 via-50% to-transparent" />
       </section>
 
       {/* TEAM SECTION */}

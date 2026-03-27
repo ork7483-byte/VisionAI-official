@@ -42,7 +42,7 @@ export default function ServiceDetailTemplate({
     <div className="min-h-screen bg-white pt-20 md:pt-24">
       {/* HERO SECTION */}
       <section 
-        className="w-full py-24 md:py-32 flex flex-col items-center justify-center text-center px-6"
+        className="w-full py-10 md:py-16 flex flex-col items-center justify-center text-center px-6"
         style={{ background: `linear-gradient(135deg, ${heroBgColor} 0%, ${heroBgColor}cc 40%, ${heroBgColor}66 100%)` }}
       >
         <FadeIn>
