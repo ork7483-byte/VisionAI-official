@@ -6,9 +6,8 @@ import { motion, AnimatePresence } from 'motion/react';
 const NAV_LINKS = [
   { name: 'HOME', path: '/' },
   { name: 'WHAT WE DO', path: '/service-copy' },
-  { name: 'GALLERY', path: '/gallery' },
-  { name: 'CONTACT', path: '/contact' },
   { name: 'ABOUT', path: '/about' },
+  { name: 'CONTACT', path: '/contact' },
 ];
 
 export default function NavBarCopy() {

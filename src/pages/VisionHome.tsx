@@ -34,7 +34,7 @@ export default function VisionHome() {
             <FadeIn>
               <div className="text-xs text-gray-400 uppercase font-bold mb-4">About</div>
               <h2 className="text-[32px] font-bold text-[#222] leading-[1.3]">
-                AI 기술 기반<br />토탈 비즈니스 그룹
+                AI기반<br />토탈 서비스
               </h2>
             </FadeIn>
           </div>

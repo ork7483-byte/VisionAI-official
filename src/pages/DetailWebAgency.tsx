@@ -11,7 +11,7 @@ export default function DetailWebAgency() {
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#7c3aed] rounded-full mix-blend-screen filter blur-[80px] opacity-70 animate-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#8b5cf6] rounded-full mix-blend-screen filter blur-[100px] opacity-60" />
         
-        <div className="max-w-5xl mx-auto rounded-[2rem] bg-white/10 backdrop-blur-xl border-t border-l border-white/40 border-b border-r border-white/10 py-16 md:py-24 flex flex-col items-center justify-center text-center relative z-10 shadow-[20px_20px_50px_rgba(0,0,0,0.5),inset_0_0_20px_rgba(255,255,255,0.2)]">
+        <div className="max-w-7xl mx-auto rounded-[2rem] bg-white/10 backdrop-blur-xl border-t border-l border-white/40 border-b border-r border-white/10 py-16 md:py-24 flex flex-col items-center justify-center text-center relative z-10 shadow-[20px_20px_50px_rgba(0,0,0,0.5),inset_0_0_20px_rgba(255,255,255,0.2)]">
           <FadeIn>
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-4">
               <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl rotate-12 bg-gradient-to-br from-white/40 to-white/5 border border-white/30 flex items-center justify-center text-white shadow-[0_10px_20px_rgba(0,0,0,0.2)]">
@@ -31,7 +31,7 @@ export default function DetailWebAgency() {
       </section>
 
       {/* CONTENT */}
-      <section className="max-w-[1000px] mx-auto px-6 py-16 md:py-24">
+      <section className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
         <div className="flex flex-col md:flex-row gap-12 md:gap-16">
           {/* Left Column */}
           <div className="w-full md:w-[240px] shrink-0">

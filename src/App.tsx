@@ -7,6 +7,8 @@ import DetailAiAds from './pages/DetailAiAds';
 import DetailAiModel from './pages/DetailAiModel';
 import DetailWebAgency from './pages/DetailWebAgency';
 import DetailMatchmaking from './pages/DetailMatchmaking';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 export default function App() {
   return (
@@ -25,8 +27,8 @@ export default function App() {
             
             {/* Placeholders for un-implemented routes */}
             <Route path="/gallery" element={<div className="pt-32 text-center h-screen">Gallery Page (Coming Soon)</div>} />
-            <Route path="/contact" element={<div className="pt-32 text-center h-screen">Contact Page (Coming Soon)</div>} />
-            <Route path="/about" element={<div className="pt-32 text-center h-screen">About Page (Coming Soon)</div>} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </main>
         <Footer />
