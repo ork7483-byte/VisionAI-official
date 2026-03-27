@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Pretendard", ui-sans-serif, system-ui, sans-serif;
+  --font-oswald: "Oswald", sans-serif;
+  --font-anton: "Anton", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --color-brand: #E11D48;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #222222;
+  background-color: #ffffff;
+}
