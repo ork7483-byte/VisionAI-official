@@ -4,7 +4,7 @@ import { IconArrowUpRight } from '@tabler/icons-react';
 import FadeIn from '../components/FadeIn';
 
 const BRANDS = [
-  { id: '01', title: 'AI AD AGENCY', subtitle: 'AI 광고 에이전시', link: '/brand/ai-ad-agency', image: 'advertising' },
+  { id: '01', title: 'AI AD AGENCY', subtitle: 'AI 광고 에이전시', link: 'https://crawled.vercel.app', image: 'advertising', external: true },
   { id: '02', title: 'AI MODEL AGENCY', subtitle: 'AI 모델 에이전시', link: 'https://www.selectaimodel.co.kr/', image: 'modeling', external: true },
   { id: '03', title: 'AI WEB AGENCY', subtitle: 'AI 웹 에이전시', link: 'https://project113-azure.vercel.app/', image: 'webdesign', external: true },
   { id: '04', title: 'AI INFLUENCER', subtitle: 'AI 인플루언서 매칭', link: '/brand/ai-influencer', image: 'influencer' },
