@@ -8,7 +8,7 @@ const BRANDS = [
   { id: '02', title: 'AI MODEL AGENCY', subtitle: 'AI 모델 에이전시', link: 'https://www.selectaimodel.co.kr/', image: 'modeling', external: true },
   { id: '03', title: 'AI WEB AGENCY', subtitle: 'AI 웹 에이전시', link: 'https://project113-azure.vercel.app/', image: 'webdesign', external: true },
   { id: '04', title: 'AI INFLUENCER', subtitle: 'AI 인플루언서 매칭', link: '/brand/ai-influencer', image: 'influencer' },
-  { id: '05', title: 'AI FITTING', subtitle: 'AI 가상피팅', link: '/brand/ai-fitting', image: 'fitting' },
+  { id: '05', title: 'AI FITTING', subtitle: 'AI 가상피팅', link: 'https://vton-visionai.vercel.app', image: 'fitting', external: true },
   { id: '06', title: 'AI FOOD PHOTO', subtitle: 'AI 음식사진 생성', link: 'https://jector-ten.vercel.app', image: 'food', external: true },
   { id: '07', title: 'AI HAIR MODEL', subtitle: 'AI 헤어모델', link: 'https://hair-visionai.vercel.app', image: 'hairstyle', external: true },
   { id: '08', title: 'AI DETAIL PAGE', subtitle: 'AI 상세페이지 생성', link: '/brand/ai-detail-page', image: 'ecommerce' },
