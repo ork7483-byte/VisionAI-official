@@ -1,13 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { IconMenu2, IconX } from '@tabler/icons-react';
+import { IconMenu2, IconX, IconChevronDown } from '@tabler/icons-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 const NAV_LINKS = [
-  { name: 'HOME', path: '/' },
-  { name: 'WHAT WE DO', path: '/service-copy' },
   { name: 'BRAND', path: '/brand' },
   { name: 'TECH', path: '/tech' },
+];
+
+const HIDDEN_LINKS = [
+  { name: 'HOME', path: '/' },
+  { name: 'WHAT WE DO', path: '/service-copy' },
   { name: 'ABOUT', path: '/about' },
   { name: 'CONTACT', path: '/contact' },
 ];
@@ -15,6 +18,8 @@ const NAV_LINKS = [
 export default function NavBarCopy() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isHiddenOpen, setIsHiddenOpen] = useState(false);
+  const hiddenRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -25,9 +30,21 @@ export default function NavBarCopy() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu on route change
+  // Close dropdown on outside click
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (hiddenRef.current && !hiddenRef.current.contains(e.target as Node)) {
+        setIsHiddenOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  // Close mobile menu & dropdown on route change
   useEffect(() => {
     setIsMobileMenuOpen(false);
+    setIsHiddenOpen(false);
   }, [location.pathname]);
 
   return (
@@ -45,7 +62,7 @@ export default function NavBarCopy() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {NAV_LINKS.map((link) => {
-              const isActive = location.pathname === link.path || (link.path === '/' && location.pathname === '/vision-home');
+              const isActive = location.pathname === link.path;
               return (
                 <Link
                   key={link.name}
@@ -58,6 +75,49 @@ export default function NavBarCopy() {
                 </Link>
               );
             })}
+
+            {/* Hidden Pages Dropdown */}
+            <div className="relative" ref={hiddenRef}>
+              <button
+                onClick={() => setIsHiddenOpen(!isHiddenOpen)}
+                className={`flex items-center gap-1 text-[13px] font-bold tracking-widest transition-colors ${
+                  isHiddenOpen ? 'text-brand' : 'text-gray-400 hover:text-gray-900'
+                }`}
+              >
+                숨김페이지
+                <IconChevronDown
+                  size={14}
+                  stroke={2}
+                  className={`transition-transform duration-200 ${isHiddenOpen ? 'rotate-180' : ''}`}
+                />
+              </button>
+              <AnimatePresence>
+                {isHiddenOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -8 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute right-0 top-full mt-3 w-48 bg-white rounded-xl shadow-lg border border-gray-100 py-2 overflow-hidden"
+                  >
+                    {HIDDEN_LINKS.map((link) => {
+                      const isActive = location.pathname === link.path || (link.path === '/' && location.pathname === '/vision-home');
+                      return (
+                        <Link
+                          key={link.name}
+                          to={link.path}
+                          className={`block px-5 py-2.5 text-[13px] font-bold tracking-widest transition-colors ${
+                            isActive ? 'text-brand bg-gray-50' : 'text-gray-600 hover:text-brand hover:bg-gray-50'
+                          }`}
+                        >
+                          {link.name}
+                        </Link>
+                      );
+                    })}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -95,7 +155,7 @@ export default function NavBarCopy() {
             </div>
             <div className="flex-1 px-6 py-12 flex flex-col space-y-8">
               {NAV_LINKS.map((link, index) => {
-                const isActive = location.pathname === link.path || (link.path === '/' && location.pathname === '/vision-home');
+                const isActive = location.pathname === link.path;
                 return (
                   <motion.div
                     key={link.name}
@@ -117,6 +177,33 @@ export default function NavBarCopy() {
                   </motion.div>
                 );
               })}
+
+              {/* Hidden Pages Section */}
+              <div className="pt-4 border-t border-gray-100">
+                <p className="text-xs font-bold text-gray-300 tracking-widest mb-4">숨김페이지</p>
+                <div className="flex flex-col space-y-6">
+                  {HIDDEN_LINKS.map((link, index) => {
+                    const isActive = location.pathname === link.path || (link.path === '/' && location.pathname === '/vision-home');
+                    return (
+                      <motion.div
+                        key={link.name}
+                        initial={{ opacity: 0, x: 20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: (NAV_LINKS.length + index) * 0.1 + 0.2 }}
+                      >
+                        <Link
+                          to={link.path}
+                          className={`text-2xl font-bold flex items-center space-x-4 ${
+                            isActive ? 'text-brand' : 'text-gray-400'
+                          }`}
+                        >
+                          <span>{link.name}</span>
+                        </Link>
+                      </motion.div>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
           </motion.div>
         )}
