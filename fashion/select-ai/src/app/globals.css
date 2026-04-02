@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-brand-text bg-white font-sans antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-xl bg-brand-primary px-6 py-3 text-base font-semibold text-white transition-all hover:bg-indigo-700 hover:shadow-lg active:scale-[0.98];
+  }
+
+  .btn-primary-lg {
+    @apply btn-primary px-8 py-4 text-lg;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-xl border-2 border-brand-primary px-6 py-3 text-base font-semibold text-brand-primary transition-all hover:bg-brand-primary hover:text-white;
+  }
+
+  .btn-kakao {
+    @apply inline-flex items-center justify-center rounded-xl bg-[#FEE500] px-6 py-3 text-base font-semibold text-[#3C1E1E] transition-all hover:bg-[#F5DC00];
+  }
+
+  .section-padding {
+    @apply px-4 py-16 md:px-8 md:py-24 lg:px-16;
+  }
+
+  .container-main {
+    @apply mx-auto max-w-7xl;
+  }
+
+  .card-base {
+    @apply rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-all hover:shadow-md;
+  }
+
+  .badge {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-medium;
+  }
+
+  .badge-before {
+    @apply badge bg-brand-badge text-white;
+  }
+
+  .badge-after {
+    @apply badge bg-brand-primary text-white;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-brand-primary to-purple-600 bg-clip-text text-transparent;
+  }
+
+  .overlay-dark {
+    @apply bg-gradient-to-t from-black/60 via-black/20 to-transparent;
+  }
+}
