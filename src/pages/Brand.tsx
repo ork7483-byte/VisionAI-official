@@ -12,6 +12,7 @@ const BRANDS = [
   { id: '06', title: 'AI FOOD PHOTO', subtitle: 'AI 음식사진 생성', link: 'https://food-visionai.vercel.app', image: 'food', external: true },
   { id: '07', title: 'AI HAIR MODEL', subtitle: 'AI 헤어모델', link: 'https://hair-visionai.vercel.app', image: 'hairstyle', external: true },
   { id: '08', title: 'AI DETAIL PAGE', subtitle: 'AI 상세페이지 생성', link: 'https://detailpage-visionai.vercel.app', image: 'ecommerce', external: true },
+  { id: '09', title: 'AI FASHION MALL', subtitle: 'AI 패션몰 제작', link: 'https://yours-lovat.vercel.app/', image: 'fashion', external: true },
 ];
 
 export default function Brand() {
