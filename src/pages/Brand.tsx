@@ -15,7 +15,7 @@ const BRANDS = [
   { id: '09', title: 'AI FASHION MALL', subtitle: 'AI 패션몰 제작', link: 'https://yours-lovat.vercel.app/', image: 'fashion', external: true },
   { id: '10', title: 'SNS AGENCY', subtitle: 'SNS 채널 운영 대행 (범용)', link: 'https://external-site-ten.vercel.app', image: 'marketing', external: true },
   { id: '11', title: 'BEAUTY BRAND SNS', subtitle: '뷰티 브랜드 전문 SNS 대행', link: 'https://external-site-beauty.vercel.app', image: 'cosmetics', external: true },
-  { id: '12', title: 'OPS DASHBOARD', subtitle: '마케팅 자동화 내부 대시보드', link: 'https://phase0-dashboard-app.vercel.app', image: 'dashboard', external: true },
+  { id: '12', title: 'OPS DASHBOARD', subtitle: '마케팅 자동화 내부 대시보드', link: '/brand/ops-dashboard', image: 'dashboard', external: false },
 ];
 
 export default function Brand() {

@@ -19,6 +19,7 @@ import DetailMatchmaking from './pages/DetailMatchmaking';
 import DetailMarketing from './pages/DetailMarketing';
 import DetailAiEducation from './pages/DetailAiEducation';
 import Brand from './pages/Brand';
+import DetailOpsDashboard from './pages/DetailOpsDashboard';
 import Tech from './pages/Tech';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -41,6 +42,7 @@ export default function App() {
             <Route path="/vision/marketing" element={<DetailMarketing />} />
             <Route path="/vision/ai-education" element={<DetailAiEducation />} />
             <Route path="/brand" element={<Brand />} />
+            <Route path="/brand/ops-dashboard" element={<DetailOpsDashboard />} />
             <Route path="/tech" element={<Tech />} />
             
             {/* Placeholders for un-implemented routes */}
