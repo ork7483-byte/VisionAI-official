@@ -9,3 +9,6 @@ coverage/
 
 .vercel
 .gstack/
+
+.env*.local
+test
