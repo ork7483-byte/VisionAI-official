@@ -4,17 +4,17 @@ import { IconArrowUpRight } from '@tabler/icons-react';
 import FadeIn from '../components/FadeIn';
 
 const BRANDS = [
-  { id: '01', title: 'AI AD AGENCY', subtitle: 'AI 광고 에이전시', link: 'https://crawled.vercel.app', image: 'advertising', external: true },
-  { id: '02', title: 'AI MODEL AGENCY', subtitle: 'AI 모델 에이전시', link: 'https://www.selectaimodel.co.kr/', image: 'modeling', external: true },
-  { id: '03', title: 'AI WEB AGENCY', subtitle: 'AI 웹 에이전시', link: 'https://project113-azure.vercel.app/', image: 'webdesign', external: true },
-  { id: '04', title: 'AI INFLUENCER', subtitle: 'AI 인플루언서 매칭', link: 'https://ulggang.vercel.app/matching', image: 'influencer', external: true },
-  { id: '05', title: 'AI FITTING', subtitle: 'AI 가상피팅', link: 'https://vton-visionai.vercel.app', image: 'fitting', external: true },
-  { id: '06', title: 'AI FOOD PHOTO', subtitle: 'AI 음식사진 생성', link: 'https://food-visionai.vercel.app', image: 'food', external: true },
-  { id: '07', title: 'AI HAIR MODEL', subtitle: 'AI 헤어모델', link: 'https://hair-visionai.vercel.app', image: 'hairstyle', external: true },
-  { id: '08', title: 'AI DETAIL PAGE', subtitle: 'AI 상세페이지 생성', link: 'https://detailpage-visionai.vercel.app', image: 'ecommerce', external: true },
-  { id: '09', title: 'AI FASHION MALL', subtitle: 'AI 패션몰 제작', link: 'https://yours-lovat.vercel.app/', image: 'fashion', external: true },
-  { id: '10', title: 'SNS AGENCY', subtitle: 'SNS 채널 운영 대행 (범용)', link: 'https://external-site-ten.vercel.app', image: 'marketing', external: true },
-  { id: '11', title: 'BEAUTY BRAND SNS', subtitle: '뷰티 브랜드 전문 SNS 대행', link: 'https://external-site-beauty.vercel.app', image: 'cosmetics', external: true },
+  { id: '01', title: 'AI AD AGENCY', subtitle: 'AI 광고 에이전시', link: '/brand/ai-ads', image: 'advertising', external: false },
+  { id: '02', title: 'AI MODEL AGENCY', subtitle: 'AI 모델 에이전시', link: '/brand/ai-model', image: 'modeling', external: false },
+  { id: '03', title: 'AI WEB AGENCY', subtitle: 'AI 웹 에이전시', link: '/brand/web-agency', image: 'webdesign', external: false },
+  { id: '04', title: 'AI INFLUENCER', subtitle: 'AI 인플루언서 매칭', link: '/brand/influencer', image: 'influencer', external: false },
+  { id: '05', title: 'AI FITTING', subtitle: 'AI 가상피팅', link: '/brand/fitting', image: 'fitting', external: false },
+  { id: '06', title: 'AI FOOD PHOTO', subtitle: 'AI 음식사진 생성', link: '/brand/food', image: 'food', external: false },
+  { id: '07', title: 'AI HAIR MODEL', subtitle: 'AI 헤어모델', link: '/brand/hair', image: 'hairstyle', external: false },
+  { id: '08', title: 'AI DETAIL PAGE', subtitle: 'AI 상세페이지 생성', link: '/brand/detail-page', image: 'ecommerce', external: false },
+  { id: '09', title: 'AI FASHION MALL', subtitle: 'AI 패션몰 제작', link: '/brand/fashion', image: 'fashion', external: false },
+  { id: '10', title: 'SNS AGENCY', subtitle: 'SNS 채널 운영 대행 (범용)', link: '/brand/sns-agency', image: 'marketing', external: false },
+  { id: '11', title: 'BEAUTY BRAND SNS', subtitle: '뷰티 브랜드 전문 SNS 대행', link: '/brand/beauty-brand', image: 'cosmetics', external: false },
   { id: '12', title: 'OPS DASHBOARD', subtitle: '마케팅 자동화 내부 대시보드', link: '/brand/ops-dashboard', image: 'dashboard', external: false },
 ];
 
