@@ -35,6 +35,7 @@ import DetailPagePortfolio from './pages/DetailPagePortfolio';
 import DetailFashionPortfolio from './pages/DetailFashionPortfolio';
 import DetailSnsAgencyPortfolio from './pages/DetailSnsAgencyPortfolio';
 import DetailBeautyBrandPortfolio from './pages/DetailBeautyBrandPortfolio';
+import DetailVisionAIPortfolio from './pages/DetailVisionAIPortfolio';
 
 export default function App() {
   return (
@@ -66,6 +67,7 @@ export default function App() {
             <Route path="/brand/fashion" element={<DetailFashionPortfolio />} />
             <Route path="/brand/sns-agency" element={<DetailSnsAgencyPortfolio />} />
             <Route path="/brand/beauty-brand" element={<DetailBeautyBrandPortfolio />} />
+            <Route path="/brand/visionai-site" element={<DetailVisionAIPortfolio />} />
             <Route path="/tech" element={<Tech />} />
 
             {/* Placeholders for un-implemented routes */}
