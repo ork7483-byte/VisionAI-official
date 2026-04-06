@@ -36,6 +36,8 @@ import DetailFashionPortfolio from './pages/DetailFashionPortfolio';
 import DetailSnsAgencyPortfolio from './pages/DetailSnsAgencyPortfolio';
 import DetailBeautyBrandPortfolio from './pages/DetailBeautyBrandPortfolio';
 import DetailVisionAIPortfolio from './pages/DetailVisionAIPortfolio';
+import DetailHairJectorPortfolio from './pages/DetailHairJectorPortfolio';
+import DetailWireframeJectorPortfolio from './pages/DetailWireframeJectorPortfolio';
 
 export default function App() {
   return (
@@ -67,6 +69,8 @@ export default function App() {
             <Route path="/brand/fashion" element={<DetailFashionPortfolio />} />
             <Route path="/brand/sns-agency" element={<DetailSnsAgencyPortfolio />} />
             <Route path="/brand/beauty-brand" element={<DetailBeautyBrandPortfolio />} />
+            <Route path="/brand/hair-jector" element={<DetailHairJectorPortfolio />} />
+            <Route path="/brand/wireframe-jector" element={<DetailWireframeJectorPortfolio />} />
             <Route path="/brand/visionai-site" element={<DetailVisionAIPortfolio />} />
             <Route path="/tech" element={<Tech />} />
 

@@ -16,8 +16,8 @@ const BRANDS = [
   { id: '10', title: 'SNS AGENCY', subtitle: 'SNS 채널 운영 대행 (범용)', link: '/brand/sns-agency', image: 'marketing', external: false },
   { id: '11', title: 'BEAUTY BRAND SNS', subtitle: '뷰티 브랜드 전문 SNS 대행', link: '/brand/beauty-brand', image: 'cosmetics', external: false },
   { id: '12', title: 'OPS DASHBOARD', subtitle: '마케팅 자동화 내부 대시보드', link: '/brand/ops-dashboard', image: 'dashboard', external: false },
-  { id: '13', title: '헤어모델_JECTOR.VER', subtitle: 'AI 헤어모델 Jector 버전', link: 'https://hairshot-ai.vercel.app', image: 'hairmodel', external: true },
-  { id: '14', title: 'JECTOR_WIREFRAME', subtitle: 'Jector 와이어프레임', link: 'https://wireframe-hairshot.vercel.app', image: 'wireframe', external: true },
+  { id: '13', title: '헤어모델_JECTOR.VER', subtitle: 'AI 헤어모델 Jector 버전', link: '/brand/hair-jector', image: 'hairmodel', external: false },
+  { id: '14', title: 'JECTOR_WIREFRAME', subtitle: 'Jector 와이어프레임', link: '/brand/wireframe-jector', image: 'wireframe', external: false },
   { id: '15', title: '비젼AI_현재 사이트', subtitle: 'VisionAI 공식 웹사이트', link: '/brand/visionai-site', image: 'visionai', external: false },
 ];
 
